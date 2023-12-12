@@ -8,17 +8,4 @@ module "vnet" {
   subnet_objects = local.subnet_objects
   nsg_objects = local.nsg_objects
 }
-
-module "blob" {
-  source  = "app.terraform.io/hcta-azure-dev/blob/azurerm"
-  version = "3.0.0"
-  resource_group_name = local.blob_settings.resource_group_name
-  storage_account_name     = local.blob_settings.storage_account_name
-  location                = local.blob_settings.location
-  account_tier            = local.blob_settings.account_tier
-  account_replication_type = local.blob_settings.account_replication_type
-  environment = local.blob_settings.environment
-
-  depends_on = [ module.vnet ]
-}
 #123

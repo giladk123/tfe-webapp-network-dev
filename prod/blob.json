@@ -1,9 +1,0 @@
-{
-    "resource_group_name": "prod-hub-rg",
-    "storage_account_name": "crmjgjgprodwetvdruei",
-    "location": "westeurope",
-    "account_tier": "Standard",
-    "account_replication_type": "LRS",
-    "environment": "prod"
-}
-  
