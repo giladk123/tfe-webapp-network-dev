@@ -1,0 +1,78 @@
+{
+    "resource_group": "hub-dev-rg",
+    "location": "westeurope",
+    "vnet_name": "hub-dev-vnet",
+    "address_space": ["10.0.0.0/16"],
+    "subnets": [
+      {
+        "name": "subnet1",
+        "address_prefix": "10.0.1.0/24",
+        "network_interface": {
+          "name": "nic-subnet1",
+          "private_ip_allocation_method": "Dynamic"
+        }
+      },
+      {
+        "name": "subnet2",
+        "address_prefix": "10.0.2.0/24",
+        "network_interface": {
+          "name": "nic-subnet2",
+          "private_ip_allocation_method": "Dynamic"
+        }
+      },
+      {
+        "name": "subnet3",
+        "address_prefix": "10.0.3.0/24",
+        "network_interface": {
+          "name": "nic-subnet3",
+          "private_ip_allocation_method": "Dynamic"
+        }
+      }
+    ],
+    "network_security_groups": [
+      {
+        "name": "web_nsg",
+        "security_rules": [
+          {
+            "name": "Allow_HTTP",
+            "priority": 100,
+            "direction": "Outbound",
+            "access": "Deny",
+            "protocol": "Tcp",
+            "source_address_prefix": "*",
+            "source_port_range": "*",
+            "destination_address_prefix": "*",
+            "destination_port_range": "80"
+          },
+          {
+            "name": "Allow_HTTPS",
+            "priority": 101,
+            "direction": "Outbound",
+            "access": "Deny",
+            "protocol": "Tcp",
+            "source_address_prefix": "*",
+            "source_port_range": "*",
+            "destination_address_prefix": "*",
+            "destination_port_range": "443"
+          }
+        ]
+      },
+      {
+        "name": "app_nsg",
+        "security_rules": [
+          {
+            "name": "Allow_App",
+            "priority": 100,
+            "direction": "Outbound",
+            "access": "Deny",
+            "protocol": "*",
+            "source_address_prefix": "*",
+            "source_port_range": "*",
+            "destination_address_prefix": "*",
+            "destination_port_range": "*"
+          }
+        ]
+      }
+    ]
+  }
+  
