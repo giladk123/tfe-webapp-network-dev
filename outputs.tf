@@ -29,7 +29,3 @@ output "rg_name" {
 output "rg_location" {
   value = module.vnet.rg_location
 }
-
-output "storage_account_name" {
-  value = module.blob.storage_account_name
-}
