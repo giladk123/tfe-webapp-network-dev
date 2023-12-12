@@ -7,8 +7,4 @@ module "vnet" {
   address_space = local.vnet_settings.address_space
   subnet_objects = local.subnet_objects
   nsg_objects = local.nsg_objects
-<<<<<<< HEAD
-  count   = var.use_module_dev ? 1 : 0
-=======
->>>>>>> 45ea6d36e5c2d91e64bf7a3e7e52563721401448
 }
