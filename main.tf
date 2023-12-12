@@ -1,4 +1,4 @@
-module "vnet" {
+module "vnet-dev" {
   source  = "app.terraform.io/hcta-azure-dev/vnet/azurerm"
   version = "2.0.0"
   resource_group = local.vnet_settings.resource_group
@@ -10,7 +10,7 @@ module "vnet" {
   count   = var.use_module_dev ? 1 : 0
 }
 
-module "vnet" {
+module "vnet-prod" {
   source  = "app.terraform.io/hcta-azure-prod/vnet/azurerm"
   version = "2.0.0"
   resource_group = local.vnet_settings.resource_group
