@@ -10,7 +10,8 @@ module "modules_vnet" {
   source  = "app.terraform.io/hcta-azure-dev/modules/azurerm//modules/vnet"
   version = "1.0.51"
 
-  vnets = local.vnet_settings.vnets
+  vnets           = local.vnet_settings.vnets
+  name_convention = local.vnet_settings.vnets.prod_vnet.name_convention
 
   depends_on = [
     module.resource-group

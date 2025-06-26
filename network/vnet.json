@@ -1,11 +1,18 @@
 {
   "prod_vnet": {
-    "name": "test-vnet",
+    "name": "testing-vnet",
     "resource_group_name": "test-rg",
     "location": "West Europe",
     "address_space": ["10.0.0.0/16"],
     "subnets": {
       "subnet1": { "name": "web-subnet", "address_prefixes": ["10.0.1.0/24"] }
-    }
+    },
+    "name_convention": {
+        "region": "we",
+        "dbank_idbank_first_letter": "i",
+        "env": "dev",
+        "cmdb_infra": "aznt",
+        "cmdb_project": "abcd"
+      }
   }
 }
