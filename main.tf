@@ -23,8 +23,7 @@ module "modules_vnet" {
 }
 
 module "storage_account" {
-  source  = "app.terraform.io/hcta-azure-dev/modules/azurerm//modules/storage_account"
-  version = "1.0.53"
+  source = "../../terraform-azurerm-modules/modules/storage_account"
 
   storage_accounts = local.storage_accounts
 
