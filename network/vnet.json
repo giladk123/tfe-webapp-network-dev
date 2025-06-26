@@ -8,14 +8,14 @@
             "subnets": [
                 {"name": "<subnet name>", "address_prefix": "10.62.252.0/28"},
                 {"name": "<subnet name>", "address_prefix": "10.62.252.16/28"}
-        ],
-        "name_convention": {
-            "region": "we",
-            "dbank_idbank_first_letter": "i",
-            "env": "dev",
-            "cmdb_infra": "aznt",
-            "cmdb_project": "abcd"
+            ]
         }
-        }
+    },
+    "name_convention": {
+        "region": "we",
+        "dbank_idbank_first_letter": "i",
+        "env": "dev",
+        "cmdb_infra": "aznt",
+        "cmdb_project": "abcd"
     }
 }
