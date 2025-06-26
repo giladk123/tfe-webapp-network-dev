@@ -11,7 +11,7 @@ module "modules_vnet" {
   version = "1.0.51"
 
   vnets           = local.vnet_settings
-  name_convention = local.vnet_settings.prod_vnet.name_convention
+  #name_convention = local.vnet_settings.prod_vnet.name_convention
 
   depends_on = [
     module.resource-group
