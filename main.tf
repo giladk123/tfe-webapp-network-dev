@@ -10,7 +10,11 @@ module "modules_vnet" {
   source  = "app.terraform.io/hcta-azure-dev/modules/azurerm//modules/vnet"
   version = "1.0.51"
 
-  vnets           = local.vnet_settings.vnets
+  vnets = {
+    for k, v in local.vnet_settings.vnets : k => merge(v, {
+      resource_group_name = module.resource-group.resource_groups["testing"].name
+    })
+  }
   name_convention = local.vnet_settings.name_convention
 
   depends_on = [

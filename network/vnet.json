@@ -1,13 +1,13 @@
 {
     "vnets": {
         "testing": {
-            "resource_group_name": "<resource group name>",
+            "resource_group_name": "will-be-overridden-by-terraform",
             "location": "westeurope",
             "address_space": ["10.62.252.0/24"],
             "tags": {"environment": "dev"},
             "subnets": [
-                {"name": "<subnet name>", "address_prefix": "10.62.252.0/28"},
-                {"name": "<subnet name>", "address_prefix": "10.62.252.16/28"}
+                {"name": "subnet-001", "address_prefix": "10.62.252.0/28"},
+                {"name": "subnet-002", "address_prefix": "10.62.252.16/28"}
             ]
         }
     },
