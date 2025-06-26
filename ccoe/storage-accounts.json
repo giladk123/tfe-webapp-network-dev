@@ -1,0 +1,12 @@
+{
+  "storageaccount001": {
+    "resource_group_name": "we-idev-sndb-abcd-testing-rg",
+    "location": "westeurope",
+    "account_tier": "Standard",
+    "account_replication_type": "LRS",
+    "tags": {
+      "environment": "production",
+      "department": "IT"
+    }
+  }
+}
