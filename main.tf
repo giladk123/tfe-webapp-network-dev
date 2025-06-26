@@ -3,6 +3,6 @@ module "resource-group" {
   version = "1.0.48"
 
   resource_groups = local.resource_group.resource_groups
-  name_convention = local.resource_group.name_convention
+  name_convention = local.resource_group.resource_groups.testing.name_convention
 }
 
