@@ -1,9 +1,16 @@
 {
   "resource_groups": {
-    "we-idev-abcd-rg": {
+    "testing": {
       "rg_location": "West Europe",
       "rg_tags": {
         "environment": "dev"
+      },
+      "name_convention": {
+        "region": "we",
+        "dbank_idbank_first_letter": "i",
+        "env": "dev",
+        "cmdb_infra": "sndb",
+        "cmdb_project": "abcd"
       }
     }
   }
