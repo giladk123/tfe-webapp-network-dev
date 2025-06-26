@@ -1,0 +1,10 @@
+{
+  "resource_groups": {
+    "we-idev-abcd-rg": {
+      "rg_location": "West Europe",
+      "rg_tags": {
+        "environment": "dev"
+      }
+    }
+  }
+}
