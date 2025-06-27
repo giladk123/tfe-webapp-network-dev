@@ -9,7 +9,7 @@
         "region": "we",
         "dbank_idbank_first_letter": "i",
         "env": "dev",
-        "cmdb_infra": "sndb",
+        "cmdb_infra": "azrg",
         "cmdb_project": "abcd"
       }
     }
