@@ -8,7 +8,7 @@
       "environment": "production",
       "department": "IT",
       "owner": "ccoe",
-      "cost_center": "123456"
+      "cost-center": "123456"
     }
   }
 }
