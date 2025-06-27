@@ -7,7 +7,8 @@
     "tags": {
       "environment": "production",
       "department": "IT",
-      "owner": "ccoe"
+      "owner": "ccoe",
+      "cost_center": "123456"
     }
   }
 }
