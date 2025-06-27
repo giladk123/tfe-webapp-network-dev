@@ -8,7 +8,8 @@
       "environment": "production",
       "department": "IT",
       "owner": "ccoe",
-      "cost-center": "123456"
+      "cost-center": "123456",
+      "project": "tfe-webapp-network-dev"
     }
   }
 }
