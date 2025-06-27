@@ -6,7 +6,8 @@
     "account_replication_type": "LRS",
     "tags": {
       "environment": "production",
-      "department": "IT"
+      "department": "IT",
+      "owner": "ccoe"
     }
   }
 }
