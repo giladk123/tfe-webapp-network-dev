@@ -877,9 +877,10 @@ terraform {
 
 ```powershell
 
-terraform login
+terraform login      # with token
 terraform init
 terraform state pull > terraform.tfstate
+# edit the terraform.tfstate file also increment the serial by one for example  "serial": 37, to  "serial": 38,
 Write-Host "Current directory: $(Get-Location)"; $currentDir = Get-Location; [System.IO.File]::WriteAllText("$currentDir\clean.tfstate", (Get-Content -Raw -Path "terraform.tfstate"), [System.Text.UTF8Encoding]::new($false))
 terraform state push clean.tfstate
 
