@@ -35,3 +35,17 @@ terraform.rc
 
 # Remove import.tf after successful import
 # import.tf
+
+# Terraform Cloud API scripts (contain sensitive operations)
+get-tfc-token.ps1
+download-tfc-state.ps1
+upload-tfc-state.ps1
+edit-state-example.ps1
+RUN-STATE-EDIT-PROCESS.ps1
+set-tfc-env.ps1
+terraform-state-*.json
+state-backups/
+get-lineage-from-error.ps1
+manual-lineage-fix.ps1
+check-tfc-lineage.ps1
+*.ps1
