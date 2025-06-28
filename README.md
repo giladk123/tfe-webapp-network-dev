@@ -857,9 +857,11 @@ After successful import:
 8. Monitor ongoing operations through the UI
 
 
-# manualy edit state file and upload to workspace
+# Manually edit state file and upload to workspace
 
-create backend.tf :
+
+```hcl
+# backend.tf
 
 terraform {
   cloud {
@@ -871,9 +873,14 @@ terraform {
     }
   }
 } 
+```
+
+```powershell
 
 terraform login
 terraform init
 terraform state pull > terraform.tfstate
 Write-Host "Current directory: $(Get-Location)"; $currentDir = Get-Location; [System.IO.File]::WriteAllText("$currentDir\clean.tfstate", (Get-Content -Raw -Path "terraform.tfstate"), [System.Text.UTF8Encoding]::new($false))
 terraform state push clean.tfstate
+
+```
