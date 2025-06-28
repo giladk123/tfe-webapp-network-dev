@@ -856,6 +856,7 @@ After successful import:
 7. Set up proper workspace permissions and access controls
 8. Monitor ongoing operations through the UI
 
+
 # manualy edit state file and upload to workspace
 
 create backend.tf :
