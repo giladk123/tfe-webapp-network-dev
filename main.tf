@@ -24,7 +24,7 @@ module "resource-group" {
 
 module "modules_storage_account" {
   source  = "app.terraform.io/hcta-azure-dev/modules/azurerm//modules/storage_account"
-  version = "1.0.59"
+  version = "1.0.60"
   
   storage_accounts = local.storage_accounts
 
