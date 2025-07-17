@@ -1,15 +1,15 @@
 {
-  "storageaccoun987534t001": {
-    "resource_group_name": "we-idev-sndb-abcd-testing-rg",
+  "testimportjdkhf4387": {
+    "resource_group_name": "we-idev-azrg-abcd-testing-rg",
     "location": "westeurope",
     "account_tier": "Standard",
     "account_replication_type": "LRS",
-    "tags": {
-      "environment": "production",
-      "department": "IT",
-      "owner": "ccoe",
-      "cost-center": "123456",
-      "project": "tfe-webapp-network-dev"
-    }
+    "account_kind": "StorageV2",
+    "access_tier": "Hot",
+    "enable_https_traffic_only": true,
+    "min_tls_version": "TLS1_2",
+    "allow_blob_public_access": false,
+    "large_file_share_enabled": true,
+    "tags": {}
   }
 }
