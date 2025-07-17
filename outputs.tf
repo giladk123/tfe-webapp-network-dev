@@ -77,16 +77,16 @@ output "all_resource_groups" {
 #   value       = module.modules_vnet.subnet
 # }
 
-# # Storage Account outputs
-# output "storage_account_ids" {
-#   description = "Map of storage account keys to their resource IDs"
-#   value       = module.modules_storage_account.storage_account_ids
-# }
+# Storage Account outputs
+output "storage_account_ids" {
+  description = "Map of storage account keys to their resource IDs"
+  value       = module.modules_storage_account.storage_account_ids
+}
 
-# output "storage_account_names" {
-#   description = "Map of storage account keys to their actual names"
-#   value       = module.modules_storage_account.storage_account_names
-# }
+output "storage_account_names" {
+  description = "Map of storage account keys to their actual names"
+  value       = module.modules_storage_account.storage_account_names
+}
 
 # output "storage_account_primary_blob_endpoints" {
 #   description = "Map of storage account keys to their primary blob endpoints"
