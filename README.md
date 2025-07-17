@@ -144,8 +144,14 @@ az resource list --resource-group "your-resource-group-name" --output table
 # Get specific resource details
 az resource show --name "resource-name" --resource-group "rg-name" --resource-type "Microsoft.Storage/storageAccounts"
 
+# Get specific resource details by using resource name and resource group
+az storage account show --name testimportjdkhf4387 --resource-group we-idev-azrg-abcd-testing-rg
+
 # Get subscription ID
 az account show --query id --output tsv
+
+
+
 ```
 
 ## Step 7: Using Import Blocks (Modern Approach)
